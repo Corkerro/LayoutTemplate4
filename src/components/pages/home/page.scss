@@ -1,0 +1,62 @@
+#cover {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 16px;
+}
+
+#title {
+    font-size: toRem(32);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#date {
+    color: var(--font-dark-1);
+    margin: 10px 0 30px;
+}
+
+.content {
+    & > * {
+        margin: 20px 0;
+        line-height: 2;
+    }
+
+    & h3 {
+        font-size: toRem(24);
+        font-weight: bold;
+    }
+
+    & p {
+        & img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    & blockquote {
+        box-sizing: border-box;
+        position: relative;
+        border-left: 2px solid var(--font-dark-1);
+        padding-left: 10px;
+    }
+
+    & a {
+        font-weight: bold;
+        color: var(--href-color-1);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--href-color-2);
+        }
+    }
+
+    & ul {
+        padding-left: 20px;
+        & li {
+            list-style-type: disc;
+            line-height: 2;
+        }
+    }
+}
